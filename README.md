@@ -1,38 +1,52 @@
-Here is the completely cleaned, finalized `README.md` code without any citation tags or annotations, ready to copy directly into your file:
-
-```markdown
 # 📄 AI Resume Screening & Job Recommendation System
 
 An intelligent, interactive application that analyzes resumes and recommends suitable job roles using AI. It provides a complete AI-powered resume screening solution with a polished user interface, helping candidates find their perfect job match while identifying key skill gaps.
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-- **⚡ One-Click Intelligent Router (`run.bat`)**: Automatically detects/creates the Python virtual environment, activates it, auto-installs dependencies from `requirements.txt`, creates `.env` if missing, and launches Streamlit.
-- **🎨 Custom Styled Dashboard**: Clean, modern interface styled for clear data visualization and smooth navigation.
+- **⚡ One-Click Intelligent Router (`run.bat`)**: Automatically detects/creates Python virtual environment, activates it, auto-installs dependencies, checks `.env`, and launches Streamlit.
+- **🎨 Custom Styled Dashboard**: Clean, modern yellow theme interface styled for clear data visualization and smooth navigation.
 - **📤 Resume Upload**: Supports PDF and DOCX formats with drag-and-drop capability.
 - **🔍 Text Extraction**: Automatically extracts text using `PyPDF2`, `pdfplumber`, and `python-docx`.
-- **🧠 AI Analysis**: Uses OpenAI GPT-4 to deeply analyze and extract:
-  - Technical and Soft skills
-  - Experience level and Education background
-  - AI-generated Professional Profile Summary
+- **🧠 AI Analysis**: Uses OpenAI GPT-4 to deeply analyze and extract Technical/Soft skills, Experience, Education, and a Professional Profile Summary.
 - **🎯 Job Matching & Recommendation**: Advanced match scoring algorithm compares extracted skills with job requirements to find the best fit.
 - **🚀 Missing Skills Analysis**: Identifies critical skill gaps needed for recommended roles to help users upskill.
-- **📊 Visual Dashboard**: Clean, responsive, and professional UI with interactive Plotly charts.
+- **📊 Performance & Visualization**: Clean, responsive, interactive Plotly charts showing real-time match scores and skill gaps.
 - **🛡️ Error Handling**: Graceful fallbacks for invalid file formats, large files, API errors, and missing keys.
 
 ---
 
-## 📷 Screenshots
+## 📑 Table of Contents
 
-| 1. Landing & Resume Upload | 2. Job Recommendations & Profile Summary |
-| :---: | :---: |
-| <img src="assets/landing_page.png" width="450" alt="Landing Page"> | <img src="assets/match_scores.png" width="450" alt="Match Scores"> |
+- [Features](#-key-features)
+- [Screenshots](#-screenshots)
+- [Tech Stack](#-tech-stack)
+- [Installation](#-installation)
+- [Quick Start](#-quick-start)
+- [Project Structure](#-project-structure)
+- [Usage](#-usage)
+- [Customization](#-customization)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Contact](#-contact)
 
-| 3. Detailed Skills Breakdown | 4. Career Recommendations & Next Steps |
-| :---: | :---: |
-| <img src="assets/detailed_analysis.png" width="450" alt="Detailed Skills"> | <img src="assets/career_recommendations.png" width="450" alt="Career Recommendations"> |
+---
+
+## 📸 Screenshots
+
+### 1. Landing & Resume Upload
+![Landing Page](docs/images/landing_page.png)
+
+### 2. Job Recommendations & Profile Summary
+![Match Scores](docs/images/match_scores.png)
+
+### 3. Detailed Skills Breakdown
+![Detailed Skills Analysis](docs/images/detailed_analysis.png)
+
+### 4. Career Recommendations & Next Steps
+![Career Recommendations](docs/images/career_recommendations.png)
 
 ---
 
@@ -45,53 +59,15 @@ An intelligent, interactive application that analyzes resumes and recommends sui
 
 ---
 
-## 📂 Project Structure
+## 🚀 Installation
 
-```text
-resume_screening_app/
-├── .streamlit/
-│   └── config.toml                # Custom UI styling configuration
-├── assets/
-│   ├── landing_page.png           # Landing view screenshot
-│   ├── match_scores.png           # Match scores screenshot
-│   ├── detailed_analysis.png      # Skills table screenshot
-│   └── career_recommendations.png # Recommendations screenshot
-├── run.bat                        # Intelligent routing launcher
-├── app.py                         # Main application script
-├── requirements.txt               # Project dependencies
-├── .env                           # Environment variables
-├── utils/
-│   ├── resume_parser.py           # Resume text extraction logic
-│   ├── ai_analyzer.py             # AI analysis and OpenAI integration
-│   └── job_matcher.py             # Job matching algorithms
-└── data/
-    └── job_roles.json             # Job role database
+### Prerequisites
 
-```
+- Git (for cloning)
+- Python 3.10+
+- pip package manager
 
----
-
-## 🚀 Getting Started
-
-### Quick Start (Recommended for Windows)
-
-Simply double-click **`run.bat`** (or run `.\run.bat` in your terminal).
-
-The intelligent launcher automatically:
-
-1. Checks or creates the `venv` virtual environment.
-2. Activates the environment.
-3. Installs/updates dependencies from `requirements.txt`.
-4. Generates a template `.env` if missing.
-5. Starts the application at `http://localhost:8501`.
-
----
-
-### Manual Setup
-
-If you prefer setting up manually:
-
-#### 1. Clone the repository
+### Clone Repository
 
 ```bash
 git clone [https://github.com/KushwahaVijay11/resume_screening_app.git](https://github.com/KushwahaVijay11/resume_screening_app.git)
@@ -99,38 +75,102 @@ cd resume_screening_app
 
 ```
 
-#### 2. Create and Activate Virtual Environment
+### Set Up Virtual Environment
 
 ```powershell
 python -m venv venv
+
+```
+
+### Activate Virtual Environment
+
+**On Windows (PowerShell):**
+
+```powershell
 .\venv\Scripts\Activate.ps1
 
 ```
 
 *(Note: If you encounter an execution policy error, run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` first).*
 
-#### 3. Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 
 ```
 
-*(Note: If you encounter an `httpx` proxy error, run `pip install "httpx<0.28.0"` to resolve it).*
+*(Note: If you encounter an httpx proxy error, run `pip install "httpx<0.28.0"` to resolve it).*
 
-#### 4. Set Up Environment Variables
+### Set Up Environment Variables
 
-Create a `.env` file in the root directory:
+Create a `.env` file in the root directory and add your OpenAI API key:
 
 ```env
 OPENAI_API_KEY=your_actual_api_key_here
 
 ```
 
-#### 5. Run the Application
+---
+
+## ⚡ Quick Start
+
+### 1. Run the Application
+
+On Windows (Recommended one-click setup):
+
+```cmd
+run.bat
+
+```
+
+Or manually:
 
 ```bash
 streamlit run app.py
+
+```
+
+### 2. Open in Browser
+
+Navigate to: `http://localhost:8501`
+
+### 3. Upload & Analyze
+
+1. Drag & drop or upload your resume (PDF/DOCX) via the sidebar.
+2. Select whether to use AI Analysis and adjust top recommendations slider.
+3. View real-time match scores, missing skills, and personalized career advice!
+
+---
+
+## 📁 Project Structure
+
+```text
+resume_screening_app/
+├── .streamlit/
+│   └── config.toml                # Streamlit UI theme settings
+│
+├── docs/
+│   └── images/                    # Documentation screenshots
+│       ├── landing_page.png
+│       ├── match_scores.png
+│       ├── detailed_analysis.png
+│       └── career_recommendations.png
+│
+├── utils/
+│   ├── resume_parser.py           # Resume text extraction logic
+│   ├── ai_analyzer.py             # OpenAI API & LangChain integration
+│   └── job_matcher.py             # Match score calculation algorithms
+│
+├── data/
+│   └── job_roles.json             # Job role database
+│
+├── .env                           # API Key configuration
+├── .gitignore                     # Git untracked files
+├── app.py                         # Main Streamlit application
+├── requirements.txt               # Python dependencies
+├── run.bat                        # One-click Windows launcher
+└── README.md                      # Documentation
 
 ```
 
@@ -138,10 +178,20 @@ streamlit run app.py
 
 ## 💡 Usage
 
-1. **Upload**: Open the app and upload your resume (PDF or DOCX).
-2. **Analyze**: Wait a moment while the AI extracts text, skills, and experience from your document.
-3. **Review Matches**: View tailored job recommendations, detailed match scores, and a breakdown of missing skills.
-4. **Explore Insights**: Use the interactive dashboard charts to explore your skill gaps and read your AI-generated profile summary.
+### Running Programmatically / Utilities
+
+```python
+from utils.resume_parser import extract_text_from_resume
+from utils.ai_analyzer import analyze_resume_with_ai
+
+# Extract raw text from file
+text = extract_text_from_resume("sample_resume.pdf")
+
+# Perform AI extraction
+analysis = analyze_resume_with_ai(text)
+print("Skills Found:", analysis["technical_skills"])
+
+```
 
 ---
 
@@ -149,32 +199,39 @@ streamlit run app.py
 
 ### Adding New Job Roles
 
-You can easily add or modify the roles the AI compares resumes against. Just edit the `data/job_roles.json` file:
+You can easily add or modify job roles by updating `data/job_roles.json`:
 
 ```json
 {
-  "title": "Your Job Title",
-  "required_skills": ["Skill 1", "Skill 2"],
-  "experience": "1-3 years",
-  "education": "Required degree"
+  "title": "Full Stack Developer",
+  "required_skills": ["Python", "JavaScript", "React", "Node.js", "SQL"],
+  "experience": "2-5 years",
+  "education": "Bachelor's in Computer Science or related field"
 }
 
 ```
 
-### Configuration Options
+---
 
-* **`use_ai`**: Toggle AI analysis on or off in the sidebar settings.
-* **`top_n`**: Adjust the slider to change the number of top job recommendations displayed.
+## 🤝 Contributing
 
+Contributions are welcome! Please follow these steps:
 
-
-## 📄 License
-
-This project is licensed under the MIT License.
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ---
 
-## 👨‍💻 Author
+## 📄 License
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
+
+---
+
+## 📧 Contact
 
 **VIJAY SINGH**
 
@@ -187,4 +244,3 @@ This project is licensed under the MIT License.
 * 📧 **Email:** vijaysinghtikampar@gmail.com
 
 Feel free to reach out if you have any questions or want to collaborate on AI and Machine Learning projects!
-
