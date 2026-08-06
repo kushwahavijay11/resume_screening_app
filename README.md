@@ -143,9 +143,6 @@ Navigate to: `http://localhost:8501`
 
 ```text
 resume_screening_app/
-├── .streamlit/
-│   └── config.toml                # Streamlit UI theme settings
-│
 ├── docs/
 │   └── images/                    # Documentation screenshots
 │       ├── landing_page.png
@@ -235,8 +232,8 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 🏛️ Madan Mohan Malaviya University of Technology (MMMUT) - Gorakhpur, Uttar Pradesh, India
 
-* 🐙 **GitHub:** [@KushwahaVijay11](https://www.google.com/search?q=https://github.com/KushwahaVijay11/)
-* 💼 **LinkedIn:** [Vijay Kushwaha](https://www.google.com/search?q=https://www.linkedin.com/in/kushwahavijay11/)
+* 🐙 **GitHub:** [@KushwahaVijay11](https://github.com/KushwahaVijay11)
+* 💼 **LinkedIn:** [Vijay Kushwaha](www.linkedin.com/in/kushwahavijay11/)
 * 📧 **Email:** vijaysinghtikampar@gmail.com
 
 Feel free to reach out if you have any questions or want to collaborate on AI and Machine Learning projects!
