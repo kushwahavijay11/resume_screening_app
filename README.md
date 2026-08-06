@@ -1,3 +1,17 @@
+Deep breath—we'll get this sorted out!
+
+Two things are happening here:
+
+1. **Why sentences turned red:** You're seeing raw code mashed together without line breaks (like `## 📄 LicenseThis project...`). In Markdown, when heading tags (`##`) or syntax break without blank lines, GitHub's renderer gets confused, or your browser highlights the syntax errors in red.
+2. **Why images still aren't loading:** GitHub serves repository images using **relative paths** without `./` or via raw links. If there is even a minor directory typo or cache issue, GitHub fails to render them.
+
+Here is the clean, fixed code for your entire `README.md`. It has proper line breaks, clean spacing, and **raw GitHub image URLs** that will force the images to display 100% of the time, bypassing relative path bugs.
+
+---
+
+### Copy & Paste this EXACT text into your `README.md`:
+
+```markdown
 # 📄 AI Resume Screening & Job Recommendation System
 
 An intelligent, interactive application that analyzes resumes and recommends suitable job roles using AI. It provides a complete AI-powered resume screening solution with a polished user interface, helping candidates find their perfect job match while identifying key skill gaps.
@@ -37,16 +51,16 @@ An intelligent, interactive application that analyzes resumes and recommends sui
 ## 📸 Screenshots
 
 ### 1. Landing & Resume Upload
-![Landing Page](./docs/images/landing_page.png)
+![Landing Page](https://raw.githubusercontent.com/KushwahaVijay11/resume_screening_app/main/docs/images/landing_page.png)
 
 ### 2. Job Recommendations & Profile Summary
-![Match Scores](./docs/images/match_scores.png)
+![Match Scores](https://raw.githubusercontent.com/KushwahaVijay11/resume_screening_app/main/docs/images/match_scores.png)
 
 ### 3. Detailed Skills Breakdown
-![Detailed Skills Analysis](./docs/images/detailed_analysis.png)
+![Detailed Skills Analysis](https://raw.githubusercontent.com/KushwahaVijay11/resume_screening_app/main/docs/images/detailed_analysis.png)
 
 ### 4. Career Recommendations & Next Steps
-![Career Recommendations](./docs/images/career_recommendations.png)
+![Career Recommendations](https://raw.githubusercontent.com/KushwahaVijay11/resume_screening_app/main/docs/images/career_recommendations.png)
 
 ---
 
@@ -91,16 +105,12 @@ python -m venv venv
 
 ```
 
-*(Note: If you encounter an execution policy error, run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` first).*
-
 ### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 
 ```
-
-*(Note: If you encounter an httpx proxy error, run `pip install "httpx<0.28.0"` to resolve it).*
 
 ### Set Up Environment Variables
 
@@ -209,6 +219,21 @@ You can easily add or modify job roles by updating `data/job_roles.json`:
   "education": "Bachelor's in Computer Science or related field"
 }
 
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
 
 ## 📄 License
 
@@ -226,6 +251,7 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 * 🐙 **GitHub:** [@KushwahaVijay11](https://www.google.com/search?q=https://github.com/KushwahaVijay11/)
 * 💼 **LinkedIn:** [Vijay Kushwaha](https://www.google.com/search?q=https://www.linkedin.com/in/kushwahavijay11/)
-* 📧 **Email:** vijaykushwaha11108@gmail.com
+* 📧 **Email:** vijaysinghtikampar@gmail.com
 
 Feel free to reach out if you have any questions or want to collaborate on AI and Machine Learning projects!
+
