@@ -7,7 +7,7 @@ An intelligent, interactive application that analyzes resumes and recommends sui
 ## ✨ Key Features
 
 - **⚡ One-Click Intelligent Router (`run.bat`)**: Automatically detects/creates Python virtual environment, activates it, auto-installs dependencies, checks `.env`, and launches Streamlit.
-- **🎨 Custom Styled Dashboard**: Clean, modern yellow theme interface styled for clear data visualization and smooth navigation.
+- **🎨 Custom Styled Dashboard**: Clean, modern interface styled for clear data visualization and smooth navigation.
 - **📤 Resume Upload**: Supports PDF and DOCX formats with drag-and-drop capability.
 - **🔍 Text Extraction**: Automatically extracts text using `PyPDF2`, `pdfplumber`, and `python-docx`.
 - **🧠 AI Analysis**: Uses OpenAI GPT-4 to deeply analyze and extract Technical/Soft skills, Experience, Education, and a Professional Profile Summary.
@@ -37,16 +37,16 @@ An intelligent, interactive application that analyzes resumes and recommends sui
 ## 📸 Screenshots
 
 ### 1. Landing & Resume Upload
-![Landing Page](docs/images/landing_page.png)
+![Landing Page](./docs/images/landing_page.png)
 
 ### 2. Job Recommendations & Profile Summary
-![Match Scores](docs/images/match_scores.png)
+![Match Scores](./docs/images/match_scores.png)
 
 ### 3. Detailed Skills Breakdown
-![Detailed Skills Analysis](docs/images/detailed_analysis.png)
+![Detailed Skills Analysis](./docs/images/detailed_analysis.png)
 
 ### 4. Career Recommendations & Next Steps
-![Career Recommendations](docs/images/career_recommendations.png)
+![Career Recommendations](./docs/images/career_recommendations.png)
 
 ---
 
@@ -209,21 +209,6 @@ You can easily add or modify job roles by updating `data/job_roles.json`:
   "education": "Bachelor's in Computer Science or related field"
 }
 
-```
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
 
 ## 📄 License
 
@@ -241,6 +226,6 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 * 🐙 **GitHub:** [@KushwahaVijay11](https://www.google.com/search?q=https://github.com/KushwahaVijay11/)
 * 💼 **LinkedIn:** [Vijay Kushwaha](https://www.google.com/search?q=https://www.linkedin.com/in/kushwahavijay11/)
-* 📧 **Email:** vijaysinghtikampar@gmail.com
+* 📧 **Email:** vijaykushwaha11108@gmail.com
 
 Feel free to reach out if you have any questions or want to collaborate on AI and Machine Learning projects!
