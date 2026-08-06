@@ -232,7 +232,7 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 🏛️ Madan Mohan Malaviya University of Technology (MMMUT) - Gorakhpur, Uttar Pradesh, India
 
-* 🐙 **GitHub:** [@KushwahaVijay11](https://github.com/KushwahaVijay11)
+* 🐙 **GitHub:** [@kushwahavijay11](https://github.com/kushwahavijay11)
 * 💼 **LinkedIn:** [@kushwahavijay11](www.linkedin.com/in/kushwahavijay11/)
 * 📧 **Email:** vijaysinghtikampar@gmail.com
 
