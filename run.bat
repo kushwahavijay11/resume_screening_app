@@ -1,10 +1,10 @@
 @echo off
-:: Set terminal colors: 60 = Yellow Background, Black Text
-color 60
+:: Set terminal colors: 30 = Sky Blue Background, Black Text
+color 30
 title Launching AI Resume Screening App...
 
 echo ===================================================
-echo     Launching AI Resume Screening App...
+echo      Launching AI Resume Screening App...
 echo ===================================================
 echo.
 
@@ -48,7 +48,7 @@ if not exist ".env" (
 
 :: 5. Launch Streamlit Application
 echo ===================================================
-echo     Starting Streamlit Server...
+echo      Starting Streamlit Server...
 echo ===================================================
 echo.
 streamlit run app.py
