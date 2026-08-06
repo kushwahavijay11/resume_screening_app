@@ -233,7 +233,7 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 🏛️ Madan Mohan Malaviya University of Technology (MMMUT) - Gorakhpur, Uttar Pradesh, India
 
 * 🐙 **GitHub:** [@kushwahavijay11](https://github.com/kushwahavijay11)
-* 💼 **LinkedIn:** [@kushwahavijay11](www.linkedin.com/in/kushwahavijay11/)
+* 💼 **LinkedIn:** [@kushwahavijay11](www.linkedin.com/in/kushwahavijay11)
 * 📧 **Email:** vijaysinghtikampar@gmail.com
 
 Feel free to reach out if you have any questions or want to collaborate on AI and Machine Learning projects!
